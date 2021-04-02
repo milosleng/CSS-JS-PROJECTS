@@ -1,0 +1,34 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\Grid Tutorial"
+	},
+	{
+		"path": "..\\..\\Grid Tutorial\\12colGridLayout"
+	},
+	{
+		"path": "..\\..\\Grid Tutorial\\MosaicLayout"
+	},
+	{
+		"path": "..\\..\\Grid Tutorial\\GridAreas"
+	},
+	{
+		"path": "..\\..\\Grid Tutorial\\messing with layout"
+	},
+	{
+		"path": "..\\collapsibleNavBar"
+	},
+	{
+		"path": "..\\clone1"
+	},
+	{
+		"path": "..\\clone1.menu play"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5501
+  }
+}
