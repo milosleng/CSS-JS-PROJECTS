@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TRICKS</title>
+  </head>
+  <body>
+    <!-- LAZY LOADING -->
+    <img src="image.jpg" loading="lazy" alt="Alternative Text" />
+    <!-- EMAIL, CALL, SMS LINKS -->
+
+    <a href="mailto:{email}?subject={subject}&body={content}">
+      Send us an email
+    </a>
+
+    <a href="tel:{phone}"> Call us </a>
+
+    <a href="sms:{phone}?body={content}"> Send us a message </a>
+    <!-- Ordered lists `start` attribute.
+Use the start attribute to change the starting point for your ordered lists. -->
+    <ol start="4">
+      <li>Monday</li>
+      <li>Tuesday</li>
+      <li>Wednesday</li>
+      <li>Thursday</li>
+    </ol>
+    <!-- METER ELEMENT -->
+    <label for="value1">Low</label>
+    <meter
+      id="value1"
+      min="0"
+      max="100"
+      low="30"
+      high="75"
+      optimum="80"
+      value="25"
+    ></meter>
+
+    <label for="value2">Medium</label>
+    <meter
+      id="value2"
+      min="0"
+      max="100"
+      low="30"
+      high="75"
+      optimum="80"
+      value="50"
+    ></meter>
+
+    <label for="value3">High</label>
+    <meter
+      id="value3"
+      min="0"
+      max="100"
+      low="30"
+      high="75"
+      optimum="80"
+      value="80"
+    ></meter>
+    <!-- HTML NATIVE SEARCH -->
+    <div class="wrapper">
+      <h1>Native HTML Search</h1>
+
+      <input list="items" />
+
+      <datalist id="items">
+        <option value="Marko Denic"></option>
+        <option value="FreeCodeCamp"></option>
+        <option value="FreeCodeTools"></option>
+        <option value="Web Development"></option>
+        <option value="Web Developer"></option>
+      </datalist>
+    </div>
+    <!-- FIELDSET ELEMENT: to group several controls and labels... -->
+    <form>
+      <fieldset>
+        <legend>Choose your favorite language</legend>
+
+        <input type="radio" id="javascript" name="language" />
+        <label for="javascript">JavaScript</label><br />
+
+        <input type="radio" id="python" name="language" />
+        <label for="python">Python</label><br />
+
+        <input type="radio" id="java" name="language" />
+        <label for="java">Java</label>
+      </fieldset>
+    </form>
+    <!-- WINDOW.OPENER: Pages opened with target="_blank" allow the new page to access the original’s window.opener. This can have security and performance implications. Include rel="noopener" or rel="noreferrer" to prevent this.  -->
+
+    <a href="https://markodenic.com/" target="_blank" rel="noopener">
+      Marko's website
+    </a>
+    <!-- BASE ELEMENT: to open all the links of the document in a new tab, use this in your html head: -->
+    <base target="_blank" />
+    <!-- 9. Favicon cache busting
+To refresh your website’s favicon you can force browsers to download a new version by adding ?v=2 to the filename.
+This is especially helpful in production to make sure the users get the new version -->
+    <link rel="icon" href="/favicon.ico?v=2" />
+    <!-- SPELLCHECK ATTRIBUTE: Use the spellcheck attribute to define whether the element may be checked for spelling errors. -->
+    <label for="input1">spellcheck="true"</label>
+    <input type="text" id="input1" spellcheck="true" />
+
+    <label for="input2">spellcheck="false"</label>
+    <input type="text" id="input2" spellcheck="false" />
+    <!-- NATIVE HTML SLIDERS: use <input type="range"> to create sliders. -->
+
+    <label for="volume">Volume: </label>
+    <input type="range" id="volume" name="volume" min="0" max="20" />
+
+    <label for="result">Your choice: </label>
+    <input type="number" id="result" name="result" />
+    <!-- HTML ACCORDION -->
+    <div class="wrapper">
+      <details>
+        <summary>Click me to see more details</summary>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+          perferendis eius. Adipisci velit et similique earum quas illo odio
+          rerum optio, quis, expedita assumenda enim dicta aliquam porro maxime
+          minima sed a ullam, aspernatur corporis.
+        </p>
+      </details>
+    </div>
+    <!-- MARK TAG:  use the <mark> tag to highlight text. -->
+    <p>I am a very <mark>happy</mark>person!</p>
+    <!-- DONWLOAD ATTRIBUTE:  use the download attribute in your links to download the file instead of navigating to it. -->
+    <a href="path/to/file" download> Download </a>
+    <!-- .WEBP image format:Use the .webp image format to make images smaller and boost the performance of your website. -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
