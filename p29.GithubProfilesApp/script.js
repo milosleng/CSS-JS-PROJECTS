@@ -18,7 +18,7 @@ async function getUser(username) {
   try {
     const { data } = await axios(APIURL + username);
     createUserCard(data);
-    getRepos(username);
+    //FIXME: getRepos(username);
   } catch (err) {
     if (err.response.status === 404) {
       createErrorCard('The user does not exist. <br> Please try again.');
