@@ -1,0 +1,17 @@
+header {
+  background: navy;
+  color: #ffffff;
+}
+
+header button {
+  background-color: #61d6c7;
+}
+
+header button:hover {
+  background-color: navy;
+}
+
+header button::after {
+  content: 'Hello';
+}
+/*# sourceMappingURL=style.css.map */

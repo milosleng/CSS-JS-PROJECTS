@@ -1,0 +1,33 @@
+@import './secondaryStyles';
+@import "./variables"
+
+header {
+  background: $primaryBtn;
+  color: $fontColor;
+
+  button {
+    background-color: $secondaryBtn;
+    &:hover {
+      background-color: $primaryBtn;
+    }
+    &::after {
+      content: 'Hello';
+    }
+  }
+  h1 {
+    font-size: $fontLarge;
+  }
+}
+
+
+//mixins with arguments
+  .contact {
+    @include flexCenter(row, blue);
+  }
+
+//styles inherited from .info element
+  .info2 {
+    @extend .info;
+    font-size: 40px;
+    //we overwrote font-size
+  }

@@ -1,0 +1,22 @@
+
+//mixins
+@mixin flexCenter($direction, $background) {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 400px;
+  flex-direction: $direction;
+  background-color: $background;
+}
+
+.secondary {
+  background-color: $mainColor;
+   @include flexCenter(column, red);
+}
+
+.info {
+  background-color: yellow;
+  font-size: 34px;
+  font-weight: bold;
+  width: 100% - 20%;
+}
