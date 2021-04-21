@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* text-overflow ellipsis */
+.mytext {
+  background-color: rgb(106, 106, 221);
+  width: 400px;
+  color: rgb(6, 22, 6);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* background clip */
+h2 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-image: url('https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* initial - set all the styles to initial, reset style; then add your new styles! */
+h3 {
+  color: purple;
+  font-size: 70px;
+  text-align: center;
+  all: initial;
+  font-size: 4rem;
+}
+
+/* border-radius */
+.boxes {
+  display: flex;
+}
+.box {
+  background-color: violet;
+  height: 50px;
+  width: 110px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.ellipse {
+  border-radius: 10%;
+}
+
+/* to get a pill, the radius in PX must be greate than half of the height of our element! you can set it to any value GREATER than the half of the height of the element */
+.pill {
+  border-radius: 555px;
+}
